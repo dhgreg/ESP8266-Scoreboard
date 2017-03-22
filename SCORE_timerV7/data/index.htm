@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FITZ || scoreboard || DTS</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/atom196.png">
+</head>
+
+<body style"background-color:000000">
+  <header class="navbar navbar-default navbar-static-top" id="top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">FITZ || scoreboard || DTS</a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="col-sm-1 col-sm-offset-2">
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-refresh" id="btnRefresh"></span>
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <p id="status" class="form-control-static">Status</p>
+        </div>
+		
+      </div>
+
+	  <div class="form-group">
+        <label class="col-sm-2 control-label">Team to Score</label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="team">
+            <button type="button" class="btn btn-default" id="btnTeam1" value=0>Left Team</button>
+            <button type="button" class="btn btn-default" id="btnTeam2" value=1>Right Team</button>
+          </div>
+        </div>
+      </div>
+	 <! Start Judge > 
+	 <div class="form-group" style="background-color:rgb(247,130,41);">
+        <label class="col-sm-2 control-label">Judge 1</label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="Judge_1">
+            <button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge1_0" value="0">0</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge1_1" value="1">1</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge1_2" value="2">2</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge1_3" value="3">3</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge1_4" value="4">4</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge1_5" value="5">5</button>
+          </div>
+        </div>
+      </div>
+	  <!End Judge>
+	  <! Start Judge > 
+	 <div class="form-group" style="background-color:rgb(84,184,54);" >
+        <label class="col-sm-2 control-label">Judge 2</label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="Judge_2">
+            <button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge2_0">0</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge2_1">1</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge2_2">2</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge2_3">3</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge2_4">4</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge2_5">5</button>
+          </div>
+        </div>
+      </div>
+	  <!End Judge>
+	  <! Start Judge > 
+	 <div class="form-group" style="background-color:rgb(255,195,0);" >
+
+        <label class="col-sm-2 control-label">Judge 3</label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="Timer">
+            <button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge3_0">0</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge3_1">1</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge3_2">2</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge3_3">3</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge3_4">4</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge3_5">5</button>
+          </div>
+        </div>
+      </div>
+	  <!End Judge>
+	  <! Start Judge > 
+	 <div class="form-group" style="background-color:rgb(243,75,122);" >
+        <label class="col-sm-2 control-label">Judge 4</label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="GameTime">
+            <button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge4_0">0</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge4_1">1</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge4_2">2</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge4_3">3</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge4_4">4</button>
+			<button type="button" class="btn btn-default" Style= "Width:50px; height:50px;" id="btnJudge4_5">5</button>
+          </div>
+        </div>
+      </div>
+	 <!End Judge>
+	 <! Start Commit Scores > 
+	 <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="Commit_score">
+            <button type="button" class="btn btn-default" Style= "height:50px;" id="btnCS">Record Scores to Team</button>
+          </div>
+        </div>
+      </div>
+	  <! end commit>
+	  <!  Start +- scores>
+	  <div class="form-group">
+        <label class="col-sm-2 control-label">Edit Scores</label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="Power">
+            <button type="button" class="btn btn-default" id="btnEditScoreUp" value=0>+Add+</button>
+            <button type="button" class="btn btn-default" id="btnEditScoreDn" value=1>-Sub-</button>
+          </div>
+        </div>
+      </div>
+	  <!end +- Scores >
+	  <!End Judges>
+	  
+	  	  <div class="form-group">
+        <label class="col-sm-2 control-label">SHOW</label>
+        <div class="col-sm-7">
+          <div class="btn-group" role="group" aria-label="Control">
+            <button type="button" class="btn btn-default" id="btnShowScore" Style= "Width:120px; ;  height:75px;" value=0>Score</button>
+			<button type="button" class="btn btn-default" id="btnShowTimer" Style= "Width:120px; ;  height:75px;" value=1>Timer</button>
+			<button type="button" class="btn btn-default" id="btnBlackout" Style= "Width:120px; ;  height:75px; background-color:black; color:yellow;" value=1>BLACKOUT</button>
+			<button type="button" class="btn btn-default" id="btnShowFlare" Style= "Width:120px; ;  height:75px;" value=1>Flare</button>
+          </div>
+        </div>
+      </div>
+	  
+	  <!	START TIMER	 >
+	  
+	<div class="form-group" style="background-color:rgb(194,194,194);" >
+		<label class="col-sm-2 control-label">Timer</label>
+		<div class="col-sm-8">
+			<div class="btn-group" role="group" aria-label="Timer">
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_10">10 sec</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_15">15 sec</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_20">20 sec</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_30">30 sec</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_45">45 sec</button>
+			</div>
+			<div class="btn-group" role="group" aria-label="Timer">
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_1">1 min</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_2">2 min</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_3">3 min</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_5">5 min</button>
+				<button type="button" class="btn btn-default" Style= "Width:75px;  height:75px;" id="shortcutTimer_10_min">10 min</button>
+			</div>
+		</div>
+			
+			<div class="col-sm-8">
+			<label class="col-sm-4 control-label"></label>
+			  <button type="button" class="btn btn-default" Style= "Width:75px; ;  height:75px;" id="btnStopTimer" >
+				<span class="glyphicon glyphicon-stop" id="btnStopTimer"></span>
+			  </button>
+			  <button type="button" class="btn btn-default" Style= "Width:75px; ;  height:75px;" id="btnStartTimer"  >
+				<span class="glyphicon glyphicon-play" id="btnStartTimer"></span>
+			  </button>
+			  <button type="button" class="btn btn-default" Style= "Width:75px; ;  height:75px;" id="btnPauseTimer">
+				<span class="glyphicon glyphicon-pause" id="btnPauseTimer"></span>
+			  </button>
+			  <button type="button" class="btn btn-default" id="btnResetTimer">
+				<span class="glyphicon glyphicon-refresh" id="btnResetTimer"></span>
+			  </button>
+			</div>
+		</div>
+
+	  
+	  <! 	END TIMER		>
+      <div class="form-group">
+        <label for="inputBrightness" class="col-sm-2 control-label">Brightness</label>
+        <div class="col-sm-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="spanBrightness">128</span>
+            <input class="form-control" id="inputBrightness" type="range" step="2" min="0" max="255" />
+          </div>
+        </div>
+      </div>
+	  
+	  <! Reset Scores>
+	  	 <! Start Commit Scores > 
+	 <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+        <div class="col-sm-6">
+          <div class="btn-group" role="group" aria-label="Reset_score">
+            <button type="button" class="btn btn-default" Style= "height:50px;" id="btnRS">RESET SCORES</button>
+          </div>
+        </div>
+      </div>
+	  <! end commit>
+	  <!end Reset Scores>
+	  
+      <div class="form-group">
+        <label for="inputColor" class="col-sm-2 control-label">Color</label>
+        <div class="col-sm-6">
+          <input id="inputColor" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-2">
+          <div class="btn-group btn-group-justified" role="group">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-color" style="background: #FF0000;" title="Red">&nbsp;</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-color" style="background: #FF8000;" title="Orange">&nbsp;</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-color" style="background: #FFFF00;" title="Yellow">&nbsp;</button>
+            </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #80FF00;" title="Chartreuse">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #00FF00;" title="Green">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #00FF80;" title="Spring Green">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #00FFFF;" title="Cyan">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #0080FF;" title="Azure">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #0000FF;" title="Blue">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #8000FF;" title="Violet">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #FF00FF;" title="Magenta">&nbsp;</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-color" style="background: #FF0080;" title="Rose">&nbsp;</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div>
+	esp ver:2.50
+	&nbsp;
+	htm ver:3.0
+	&nbsp;
+	js ver:2.0
+	&nbsp;
+  </div>
+  <div>
+	json ver:0.8
+	&nbsp;
+	css ver:1.5
+	&nbsp; &nbsp;
+	pScore ver:2.0
+	&nbsp;
+	pTimer ver:0.6
+  </div>
+  <div>
+	build:
+	&nbsp;
+	257
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
