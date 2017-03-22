@@ -1,5 +1,5 @@
 # ESP8266-ScoreBoard
-WIFI scoreboard with game timer, countdown timer, 4 judges and editing of score 
+WIFI scoreboard with timer, 4 judges, editing of score and two team score keeping
 This is a work based on esp8266-fastled-websever and the Great work of FASTLED, esp8266 for arduino and many many others. THANK YOU for your hard work!
 
 The score board is:
